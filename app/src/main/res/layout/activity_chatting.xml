@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFD3CCCC"
+    tools:context=".ChattingActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbaar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#179A1C">
+
+        <ImageView
+            android:id="@+id/backimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24">
+
+        </ImageView>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/img">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2sp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="pooja patel"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbaar">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/txt"
+        android:layout_width="285dp"
+        android:layout_marginRight="3dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gradiant"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="4sp"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_baseline_insert_emoticon_24">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="4sp"
+            android:layout_toEndOf="@+id/pic"
+            android:background="@null"
+            android:hint="Message">
+
+        </EditText>
+
+        <ImageView
+
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:layout_marginRight="15sp"
+            android:layout_toStartOf="@+id/emoji"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_baseline_currency_rupee_24">
+
+        </ImageView>
+
+        <ImageView
+
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:layout_marginRight="15sp"
+            android:layout_toStartOf="@+id/money"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_baseline_share_24">
+
+        </ImageView>
+
+        <ImageView
+
+            android:id="@+id/emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4sp"
+            android:layout_marginRight="10dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_baseline_camera_alt_24">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="#179A1C"
+        android:src="@drawable/ic_baseline_keyboard_voice_24">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+
+
+</RelativeLayout>

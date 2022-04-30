@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="New group"
+        android:id="@+id/home">
+
+    </item>
+    <item android:title="Search"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="ifRoom"
+        android:id="@+id/Search">
+
+    </item>
+    <item android:title="New broadcast"
+        android:id="@+id/tv">
+
+    </item>
+    <item android:title="Linked Devices"
+        android:id="@+id/linked">
+
+    </item>
+    <item android:title="Starred messages"
+        android:id="@+id/starred">
+
+    </item>
+    <item android:title="Payment"
+        android:id="@+id/payment"
+        app:showAsAction="never">
+
+    </item>
+    <item android:title="Setting"
+        android:id="@+id/setting"
+        app:showAsAction="never">
+
+    </item>
+
+
+
+
+</menu>

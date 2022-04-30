@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/vidio"
+        android:icon="@drawable/ic_baseline_videocam_24"
+        app:showAsAction="always"
+        android:title="TODO">
+
+    </item>
+
+    <item android:id="@+id/phone"
+        android:icon="@drawable/ic_baseline_local_phone_24"
+        app:showAsAction="always"
+        android:title="TODO">
+
+    </item>
+    <item android:title="View Contect"
+        android:id="@+id/Contect"
+        app:showAsAction="never">
+
+    </item>
+    <item android:title="Search"
+        android:id="@+id/Search"
+        app:showAsAction="never">
+
+    </item>
+    <item android:title="More"
+        android:id="@+id/more"
+        app:showAsAction="never">
+
+    </item>
+</menu>
